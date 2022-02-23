@@ -1,0 +1,44 @@
+.App {
+  background-color: #282c34;
+}
+.header {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+.formm {
+  padding-top: 20px;
+}
+
+.task {
+  background-color: #3d4350;
+  padding-right: 20px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.link {
+  padding-right: 10px;
+  color: azure;
+}
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.link {
+  background-color: #473837;
+  color: white;
+  padding: 4px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
