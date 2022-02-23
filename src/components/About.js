@@ -4,22 +4,22 @@ import Header from "./Header";
 
 const About = () => {
   const [data, setData] = useState([]);
-  const [user, setUser] = useState("showButton");
+  const [user, setUser] = useState(false);
 
   const fetchPost = () => {
-    setUser("loading");
+    setUser(true);
     axios.get(`https://jsonplaceholder.typicode.com/posts`).then((res) => {
       setData(res.data);
-      setUser("getdata");
+      setUser(null);
     });
   };
 
   return (
     <div className="task">
       <Header />
-      {user === "showButton" ? (
+      {user === false ? (
         <button onClick={fetchPost}> get User</button>
-      ) : user === "loading" ? (
+      ) : user === true ? (
         <div>Loading...</div>
       ) : (
         <table>
