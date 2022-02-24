@@ -20,6 +20,9 @@ const Header = () => {
       <Link to="/comment" className="link">
         Comment
       </Link>
+      <Link to="/test" className="link">
+        Test
+      </Link>
     </div>
   );
 };

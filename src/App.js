@@ -6,6 +6,8 @@ import About from "./components/About";
 import User from "./components/User";
 import Post from "./components/Post";
 import Comment from "./components/Comment";
+import Test from "./components/Test";
+
 import "./App.css";
 
 const App = () => {
@@ -19,6 +21,7 @@ const App = () => {
           <Route path="/user" component={User} />
           <Route path="/post" component={Post} />
           <Route path="/comment" component={Comment} />
+          <Route path="/test" component={Test} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -14,7 +14,6 @@ const Task = () => {
       const newTodo = {
         id: new Date().getTime(),
         text: todo,
-        completed: false,
       };
 
       setTodos([...todos, newTodo]);
