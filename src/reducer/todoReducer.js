@@ -6,7 +6,14 @@ const initialState = {
 const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_TODO":
-      return { ...state, list: [...state.list, action.payLoad] };
+      const check = state.list.find((tod) => tod.data === action.payLoad.data);
+      if (check) {
+        alert("Task already exists");
+      } else {
+        state = { ...state, list: [...state.list, action.payLoad] };
+      }
+
+      return state;
 
     case "DELETE_TODO":
       const newList = state.list.filter(

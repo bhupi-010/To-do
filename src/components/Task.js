@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Header from "./Header";
+
 
 const Task = () => {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const check = todos.find((tod) => tod.text === todo);
     if (check) {
       alert("Task already exists");
@@ -36,7 +35,7 @@ const Task = () => {
 
   return (
     <div className="task">
-      <Header />
+     
       <div className="formm">
         <form onSubmit={handleSubmit}>
           <input

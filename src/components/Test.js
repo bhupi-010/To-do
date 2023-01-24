@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, deleteTodo, edittodo } from "../actions/index";
+import { addTodo, deleteTodo, editTodo } from "../actions/index";
 
 const Test = () => {
   const [text, setText] = useState("");
@@ -37,7 +37,7 @@ const Test = () => {
           dispatch(deleteTodo(list.id));
         };
         const handleEdit = () => {
-          dispatch(edittodo(list));
+          dispatch(editTodo(list));
           setEdit(true);
         };
         return (

@@ -17,7 +17,7 @@ export const deleteTodo = (id) => {
   };
 };
 
-export const edittodo = (list) => {
+export const editTodo = (list) => {
   return {
     type: "EDIT_TODO",
     payLoad: {
